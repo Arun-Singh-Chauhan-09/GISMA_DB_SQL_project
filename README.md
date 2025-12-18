@@ -1,8 +1,9 @@
-
 # E-Commerce Database SQL Project
 
 ## Project Overview
-This project is an **E-Commerce Database SQL implementation** developed as part of the **M605 – Database Systems / SQL** academic module.  
+This project is an **E-Commerce Database SQL implementation** developed as part of the  
+**M605 – Database Systems / SQL** academic module.
+
 The project demonstrates the design, creation, and querying of a relational database using **MySQL** to support a basic e-commerce system.
 
 The database design is based on core e-commerce entities such as users, products, orders, and order items.  
@@ -20,10 +21,10 @@ SQL scripts are provided to create the schema, insert sample data, and execute a
 ---
 
 ## Technologies Used
-- **Database:** MySQL
-- **Query Language:** SQL
-- **Design Tool:** ER Diagram (PNG)
-- **Version Control:** Git & GitHub
+- **Database:** MySQL  
+- **Query Language:** SQL  
+- **Design Tool:** ER Diagram (PNG)  
+- **Version Control:** Git & GitHub  
 
 ---
 
@@ -43,78 +44,66 @@ GISMA_DB_SQL_project/
 
 ---
 
-## Database Schema
+## How to Clone This Repository
 
-The database consists of the following main tables:
-
-- **users** – Stores customer information  
-- **products** – Stores product details and pricing  
-- **orders** – Stores order information  
-- **order_items** – Stores products associated with each order  
-
-### Relationships
-- One user can place multiple orders  
-- One order can contain multiple order items  
-- Each order item references a product  
-
-The complete schema definition and sample data are available in:
-
-```
-01_sql_schema_and_data.sql
+### Using HTTPS
+```bash
+git clone https://github.com/Arun-Singh-Chauhan-09/GISMA_DB_SQL_project.git
 ```
 
----
-
-## ER Diagram
-
-The Entity Relationship (ER) diagram illustrates the structure of the database and relationships between entities.
-
-![ER Diagram](diagrams/ER.png)
-
----
-
-## SQL Queries
-
-The file below contains SQL queries that demonstrate data retrieval and analysis:
-
-```
-02_sql_queries.sql
+### Using SSH
+```bash
+git clone git@github.com:Arun-Singh-Chauhan-09/GISMA_DB_SQL_project.git
 ```
 
-### Example Query Types
-- Retrieve all users and their orders
-- List products with available stock
-- Calculate total order values
-- Join multiple tables using INNER JOIN
-- Filter and sort data using WHERE, GROUP BY, and ORDER BY
+After cloning:
+```bash
+cd GISMA_DB_SQL_project
+```
 
 ---
 
 ## How to Run the SQL Project
 
-1. Open **MySQL Workbench** or MySQL CLI
-2. Create a database (if not already created):
+1. Open **MySQL Workbench** or MySQL CLI  
+2. Create and select the database:
 ```sql
 CREATE DATABASE ecommerce_db;
 USE ecommerce_db;
 ```
-3. Run the schema and data script:
+3. Run schema and data:
 ```sql
 SOURCE 01_sql_schema_and_data.sql;
 ```
-4. Execute queries from:
+4. Run queries:
 ```sql
 SOURCE 02_sql_queries.sql;
 ```
 
 ---
 
-## Key Learning Outcomes
-- Understanding relational database design
-- Writing structured SQL scripts
-- Using joins and constraints effectively
-- Applying SQL queries to solve real-world problems
-- Visualising database relationships using ER diagrams
+## Database Schema
+
+- **users**
+- **products**
+- **orders**
+- **order_items**
+
+### Relationships
+- One user → many orders  
+- One order → many order items  
+- One product → many order items  
+
+---
+
+## ER Diagram
+
+![ER Diagram](diagrams/ER.png)
+
+---
+
+## SQL Queries
+Demonstrates joins, filtering, aggregation, and analysis.
 
 ---
 
